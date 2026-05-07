@@ -1,21 +1,21 @@
-/* ============ Peinture Sainte-Thérèse — couleur & finis modernes ============ */
-/* Palette: cream / charcoal / terracotta / forest */
+/* ============ Peinture Sainte-Thérèse — studio minimal moderne ============ */
+/* Palette: pure white / near black / electric blue accent */
 
 :root {
-  --bg: #f9f6f0;
-  --bg-2: #f0ebe0;
+  --bg: #ffffff;
+  --bg-2: #fafafa;
   --paper: #ffffff;
-  --ink: #161412;
-  --ink-2: #2d2925;
-  --ink-soft: #5a544c;
-  --accent: #b85f3e;
-  --accent-soft: #e89e7c;
-  --accent-dark: #8a4528;
-  --forest: #2d3a2d;
-  --forest-soft: #7a9080;
-  --sand: #e0d4be;
-  --line: #dfd4bc;
-  --line-soft: #ece3cd;
+  --ink: #0a0a0a;
+  --ink-2: #18181b;
+  --ink-soft: #71717a;
+  --accent: #2563eb;
+  --accent-soft: #93c5fd;
+  --accent-dark: #1d4ed8;
+  --forest: #18181b;
+  --forest-soft: #71717a;
+  --sand: #f4f4f5;
+  --line: #e4e4e7;
+  --line-soft: #f4f4f5;
   --max: 1180px;
 
   --display: "Fraunces", "Newsreader", Georgia, serif;
@@ -54,9 +54,9 @@ button { font-family: inherit; }
   justify-content: space-between;
   gap: 1rem;
   padding: 0.95rem clamp(1rem, 4vw, 2rem);
-  background: rgba(249, 246, 240, 0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
 .brand {
@@ -108,7 +108,7 @@ button { font-family: inherit; }
   margin-left: 0.4rem;
   padding: 0.65rem 1.1rem;
   background: var(--ink);
-  color: var(--bg);
+  color: #ffffff;
   border-radius: 999px;
   font-weight: 600;
   font-size: 0.92rem;
@@ -162,7 +162,7 @@ button { font-family: inherit; }
 }
 .btn-primary {
   background: var(--ink);
-  color: var(--bg);
+  color: #ffffff;
   border-color: var(--ink);
 }
 .btn-primary:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
@@ -171,7 +171,7 @@ button { font-family: inherit; }
   color: var(--ink);
   border: 1px solid var(--ink);
 }
-.btn-ghost:hover { background: var(--ink); color: var(--bg); }
+.btn-ghost:hover { background: var(--ink); color: #ffffff; }
 
 /* ================== HERO ================== */
 .hero {
@@ -196,8 +196,8 @@ button { font-family: inherit; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(22,20,18,.78) 0%, rgba(22,20,18,.40) 45%, rgba(22,20,18,.10) 75%, transparent 100%),
-    linear-gradient(to right, rgba(22,20,18,.35), transparent 60%);
+    linear-gradient(to top, rgba(10,10,10,.85) 0%, rgba(10,10,10,.45) 45%, rgba(10,10,10,.12) 75%, transparent 100%),
+    linear-gradient(to right, rgba(10,10,10,.40), transparent 60%);
 }
 .hero-inner {
   position: relative;
@@ -206,7 +206,7 @@ button { font-family: inherit; }
   max-width: var(--max);
   margin: 0 auto;
   padding: clamp(2.5rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem);
-  color: var(--bg);
+  color: #ffffff;
 }
 .eyebrow {
   display: inline-flex;
@@ -235,7 +235,7 @@ button { font-family: inherit; }
   letter-spacing: -0.02em;
   margin: 0 0 1.3rem;
   max-width: 16ch;
-  color: var(--bg);
+  color: #ffffff;
   font-variation-settings: "opsz" 144;
 }
 .hero h1 .accent { color: var(--accent-soft); font-style: italic; }
@@ -243,15 +243,15 @@ button { font-family: inherit; }
   max-width: 56ch;
   font-size: 1.05rem;
   font-family: var(--body);
-  color: rgba(249, 246, 240, 0.92);
+  color: rgba(255, 255, 255, 0.92);
   margin: 0 0 1.8rem;
   line-height: 1.55;
 }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-bottom: 2.5rem; }
-.hero-ctas .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.hero-ctas .btn-primary { background: var(--accent); border-color: var(--accent); color: #ffffff; }
 .hero-ctas .btn-primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
-.hero-ctas .btn-ghost { color: var(--bg); border-color: rgba(249,246,240,0.55); }
-.hero-ctas .btn-ghost:hover { background: var(--bg); color: var(--ink); border-color: var(--bg); }
+.hero-ctas .btn-ghost { color: #ffffff; border-color: rgba(255,255,255,0.55); }
+.hero-ctas .btn-ghost:hover { background: #ffffff; color: var(--ink); border-color: #ffffff; }
 
 .hero-meta {
   display: flex;
@@ -260,8 +260,8 @@ button { font-family: inherit; }
   gap: 0.5rem 0.7rem;
   font-family: var(--body);
   font-size: 0.88rem;
-  color: rgba(249, 246, 240, 0.78);
-  border-top: 1px solid rgba(249,246,240,0.22);
+  color: rgba(255, 255, 255, 0.78);
+  border-top: 1px solid rgba(255,255,255,0.22);
   padding-top: 1.4rem;
   max-width: 720px;
   letter-spacing: 0.02em;
@@ -735,7 +735,7 @@ button { font-family: inherit; }
 /* ================== FOOTER ================== */
 .site-footer {
   background: var(--ink);
-  color: rgba(249, 246, 240, 0.78);
+  color: rgba(255, 255, 255, 0.72);
   padding: 3.5rem 0 1.5rem;
   border-top: 4px solid var(--accent);
 }
@@ -750,14 +750,14 @@ button { font-family: inherit; }
   font-family: var(--display);
   font-weight: 600;
   font-size: 1.3rem;
-  color: var(--bg);
+  color: #ffffff;
   margin: 0 0 0.5rem;
   letter-spacing: -0.01em;
 }
 .footer-baseline {
   font-family: var(--body);
   font-size: 0.93rem;
-  color: rgba(249, 246, 240, 0.6);
+  color: rgba(255, 255, 255, 0.55);
   max-width: 32ch;
   line-height: 1.55;
 }
@@ -767,7 +767,7 @@ button { font-family: inherit; }
   font-size: 0.74rem;
   color: var(--accent-soft);
   margin: 0 0 0.85rem;
-  border-bottom: 1px solid rgba(232, 158, 124, 0.22);
+  border-bottom: 1px solid rgba(147, 197, 253, 0.22);
   padding-bottom: 0.5rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -779,13 +779,13 @@ button { font-family: inherit; }
 .footer-bottom {
   margin-top: 2.5rem;
   padding-top: 1.4rem;
-  border-top: 1px solid rgba(249,246,240,0.12);
+  border-top: 1px solid rgba(255,255,255,0.12);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.6rem;
   font-size: 0.85rem;
-  color: rgba(249, 246, 240, 0.55);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* ================== ANIMATIONS ================== */
