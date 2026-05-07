@@ -534,6 +534,35 @@ em { font-style: italic; }
   transition: filter .5s ease;
 }
 .card-wood:hover img { filter: brightness(1.04) saturate(1.05); }
+/* Before/After hover swap */
+.card-wood.ba { position: relative; }
+.card-wood.ba .ba-before {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  width: calc(100% - 1.2rem);
+  height: 280px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .45s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+.card-wood.ba:hover .ba-before { opacity: 1; }
+.card-wood.ba:hover .ba-after { filter: none; }
+.card-wood .ba-hint {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--bordeaux);
+  color: var(--bg);
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.78rem;
+  padding: 0.3rem 0.7rem;
+  letter-spacing: 0.04em;
+  z-index: 3;
+}
 .card-wood figcaption {
   display: flex;
   align-items: center;
